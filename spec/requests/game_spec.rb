@@ -15,7 +15,7 @@ describe 'Game API' do
     expect(response).to be_successful
 
     score = JSON.parse(response.body, symbolize_names: true)
-require "pry"; binding.pry
+
     return_json =  {
       "game_id":1,
       "scores": [
