@@ -10,12 +10,12 @@ describe 'Game API' do
     josh.plays.create(game: game, word: "sal", score: 15)
     sal.plays.create(game: game, word: "josh", score: 16)
 
-    get "/api/v1/games/1"
+    get "/api/v1/games/#{game.id}"
 
     expect(response).to be_successful
 
     score = JSON.parse(response.body, symbolize_names: true)
-
+require "pry"; binding.pry
     return_json =  {
       "game_id":1,
       "scores": [
