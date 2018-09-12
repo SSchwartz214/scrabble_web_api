@@ -19,7 +19,7 @@ describe "As a guest user" do
 end
 
   context 'fills in invalid word' do
-    it 'returns  and error message' do
+    xit 'returns  and error message' do
       # As a guest user
       # When I visit "/"
       visit '/'
