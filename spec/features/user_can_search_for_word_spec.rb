@@ -28,6 +28,8 @@ end
       # And I click "Validate Word"
       click_on "Validate Word"
       # Then I should see a message that says "'foxez' is not a valid word."
+      expect(current_path).to eq search_path
+
       expect(page).to have_content("'foxez' is not a valid word.")
     end
   end

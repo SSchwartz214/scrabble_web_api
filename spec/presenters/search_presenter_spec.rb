@@ -9,7 +9,6 @@ describe SearchPresenter do
 
   describe 'instance methods' do
     it '#word' do
-      # expect(subject.word.count).to eq 1
       expect(subject.word).to be_a Word
     end
   end
