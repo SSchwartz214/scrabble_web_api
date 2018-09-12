@@ -10,6 +10,8 @@ visit '/'
 fill_in :q, with: "foxes"
 # And I click "Validate Word"
 click_on "Validate Word"
+
+expect(current_path).to eq search_path
 # Then I should see a message that says "'foxes' is a valid word and its root form is 'fox'."
 expect(page).to have_content("'foxes' is a valid word and its root form is 'fox'.")
     end
